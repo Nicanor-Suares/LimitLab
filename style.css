@@ -59,6 +59,8 @@ body {
     width: min(360px, 86vw);
     max-width: 360px;
     background: #ffffff;
+    border-right: 1px solid rgba(2,6,23,0.06);
+    box-shadow: 8px 0 30px rgba(2,6,23,0.08);
     transform: translateX(-110%);
     transition: transform 320ms cubic-bezier(.2,.9,.2,1);
     z-index: 55;
