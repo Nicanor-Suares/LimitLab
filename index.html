@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Limit Lab</title>
+
+  <!-- Geist Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="#hero" class="logo">Limit Lab</a>
+
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="#hero">Inicio</a>
+        <a href="#roadmap">Hoja de ruta</a>
+        <a href="#events">Eventos</a>
+        <a href="#join">Cómo sumarte</a>
+        <a href="#contact">Contacto</a>
+        <a href="merch.html">Merch</a>
+      </nav>
+
+      <button class="nav-toggle" aria-label="Abrir menú"><i class="fa-solid fa-bars"></i></button>
+    </div>
+  </header>
+
+  <section id="hero" class="hero">
+    <div class="hero-content">
+
+      <span class="hero-badge">Y SI TE PREGUNTO...</span>
+
+      <h1 class="hero-title">
+        ¿Qué objetivos vas a cumplir antes de morirte?
+      </h1>
+
+      <p class="hero-description">
+        Limit Lab funciona como un laboratorio donde pones a prueba tus límites
+        mentales, físicos y creativos a través de actividades y desafíos
+        acompañado por una comunidad.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#" class="btn btn-primary">Sumarte al camino</a>
+        <a href="#" class="btn btn-secondary">Conocer el proyecto</a>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="dark-section">
+    <div class="dark-container">
+      <div class="dark-grid">
+        <div class="dark-left">
+          <span class="muted-label">EL DESAFÍO ACTUAL</span>
+          <h2 class="dark-title">Ironman 70.3</h2>
+          <p class="dark-sub">1.9 km nadando. 90 km en bici. 21 km corriendo.</p>
+        </div>
+
+        <div class="dark-right">
+          <p class="dark-paragraph">
+            La carrera es la excusa. Lo que realmente construimos es una comunidad que se acompaña a lograr objetivos, apoyada por marcas que quieren ser parte del camino.
+          </p>
+
+          <p class="dark-small">Un laboratorio donde probamos qué pasa cuando te comprometés con algo grande, lo compartís con otros y documentás el proceso sin filtros.</p>
+        </div>
+      </div>
+
+      <hr class="dark-divider" />
+
+      <div class="stats">
+        <div class="stat">
+          <div class="stat-value">112</div>
+          <div class="stat-label">KILÓMETROS TOTALES</div>
+        </div>
+
+        <div class="stat">
+          <div class="stat-value">+4</div>
+          <div class="stat-label">MESES DE PREPARACIÓN</div>
+        </div>
+
+        <div class="stat">
+          <div class="stat-value">1</div>
+          <div class="stat-label">COMUNIDAD</div>
+        </div>
+
+        <div class="stat">
+          <div class="stat-value">∞</div>
+          <div class="stat-label">APRENDIZAJES</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="roadmap" class="roadmap">
+    <div class="roadmap-container">
+      <span class="muted-label">HOJA DE RUTA</span>
+      <h2 class="roadmap-title">Hoja de ruta</h2>
+
+      <p class="roadmap-intro">Nos preparamos para correr un Ironman 70.3: a través de nuestros eventos vamos cubriendo las 3 modalidades — correr, pedalear y nadar. A continuación, los 4 eventos clave:</p>
+
+      <div class="events-grid">
+        <article class="event-card">
+          <div class="event-head"><h4>1 — Running</h4><span class="event-badge gray">Completado</span></div>
+          <p class="event-desc">Primer evento: corrida organizada junto a Guchini.</p>
+        </article>
+
+        <article class="event-card">
+          <div class="event-head"><h4>2 — Bicicleteada nocturna</h4><span class="event-badge yellow">Próxima — semana que viene</span></div>
+          <p class="event-desc">Salida nocturna en bicicleta organizada junto a Organyca — ¡no te la pierdas!</p>
+        </article>
+
+        <article class="event-card">
+          <div class="event-head"><h4>3 — Natación</h4><span class="event-badge blue">Febrero</span></div>
+          <p class="event-desc">Evento dedicado a la preparación en agua: técnica y distancias.</p>
+        </article>
+
+        <article class="event-card">
+          <div class="event-head"><h4>4 — Evento combinado</h4><span class="event-badge outline">Marzo</span></div>
+          <p class="event-desc">Cerramos con un evento que combina 2–3 disciplinas.</p>
+        </article>
+      </div>
+
+      <!-- <div class="timeline">
+        <div class="timeline-line"></div>
+
+        <div class="timeline-row">
+          <div class="timeline-left"><div class="marker completed"></div></div>
+          <div class="timeline-right">
+            <div class="timeline-item">
+              <div class="item-head">
+                <h3>Preparación</h3>
+                <span class="badge gray">COMPLETADO</span>
+              </div>
+              <p class="item-desc">Definir el desafío, armar el equipo, sentar las bases del proyecto.</p>
+              <ul class="item-list">
+                <li>Elegimos el Ironman 70.3 como experimento</li>
+                <li>Construimos la identidad de Limit Lab</li>
+                <li>Primeras conversaciones con marcas</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-row">
+          <div class="timeline-left"><div class="marker current"></div></div>
+          <div class="timeline-right">
+            <div class="timeline-item highlight">
+              <div class="item-head">
+                <h3>Entrenamiento</h3>
+                <span class="badge yellow">AHORA</span>
+              </div>
+              <p class="item-desc">El día a día del proceso. Nadar, pedalear, correr. Documentar todo.</p>
+              <ul class="item-list">
+                <li>Plan de entrenamiento por disciplina</li>
+                <li>Contenido semanal del proceso</li>
+                <li>Sesiones de comunidad</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-row">
+          <div class="timeline-left"><div class="marker"></div></div>
+          <div class="timeline-right">
+            <div class="timeline-item">
+              <div class="item-head"><h3>Contenido</h3></div>
+              <p class="item-desc">Transformar el proceso en historias que inspiren.</p>
+              <ul class="item-list">
+                <li>Diario en video del camino</li>
+                <li>Podcast con invitados</li>
+                <li>Detrás de escena</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-row">
+          <div class="timeline-left"><div class="marker"></div></div>
+          <div class="timeline-right">
+            <div class="timeline-item">
+              <div class="item-head"><h3>Encuentros</h3></div>
+              <p class="item-desc">Llevar el proyecto a la calle. Entrenamientos abiertos, charlas, eventos.</p>
+              <ul class="item-list">
+                <li>Entrenamientos grupales y semanales</li>
+                <li>Charlas sobre proceso</li>
+                <li>4 Eventos con marcas aliadas</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-row">
+          <div class="timeline-left"><div class="marker"></div></div>
+          <div class="timeline-right">
+            <div class="timeline-item">
+              <div class="item-head"><h3>El día D</h3></div>
+              <p class="item-desc">La carrera. 122 kilómetros de todo lo que construimos.</p>
+              <ul class="item-list">
+                <li>Cobertura en vivo</li>
+                <li>Comunidad presente</li>
+                <li>El cierre de un ciclo</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-row">
+          <div class="timeline-left"><div class="marker"></div></div>
+          <div class="timeline-right">
+            <div class="timeline-item card-soft">
+              <div class="item-head"><h3>Post desafío</h3></div>
+              <p class="item-desc">Cerrar el capítulo, documentar aprendizajes, abrir el próximo.</p>
+              <ul class="item-list">
+                <li>Documental del proyecto</li>
+                <li>Retrospectiva con la comunidad</li>
+                <li>Siguiente experimento</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  -->
+  </section>
+
+  <section id="events" class="events">
+    <div class="events-container">
+      <h2 class="events-title">Vos también podes ser parte:</h2>
+
+      <div class="events-embed">
+        <iframe
+          src="https://luma.com/embed/calendar/cal-FAFRzGYcxG1DzwW/events?lt=light"
+          width="100%"
+          height="350"
+          frameborder="0"
+          style="border: 1px solid #bfcbda88; border-radius: 4px;"
+          allowfullscreen=""
+          aria-hidden="false"
+          tabindex="0"
+        ></iframe>
+      </div>
+    </div>
+  </section>
+
+  <section id="join" class="dark-section">
+    <div class="dark-container">
+      <div class="join-left">
+        <span class="muted-label">CÓMO SUMARTE</span>
+        <h2 class="join-title">Limit Lab se financia de manera colaborativa.
+        </h2>
+
+        <p class="join-desc">Buscamos compañeros de camino que quieran construir esta historia juntos. Cada aporte, sin importar su tamaño nos ayuda a lograr el objetivo.</p>
+
+        <a href="#contact" class="btn btn-tertiary mb-3">Quiero ser parte</a>
+        <a href="merch.html" class="btn btn-tertiary mb-3">Merch oficial</a>
+      </div>
+
+      <div class="join-right mb-3 mt-3">
+        <div class="cards">
+          <div class="card">
+              <div class="card-icon"><i class="fa-solid fa-wallet" aria-hidden="true"></i></div>
+            <h4>Financiamiento</h4>
+            <p>Aportes económicos que van directo al proyecto: inscripción, viajes, producción de contenido.</p>
+          </div>
+
+          <div class="card">
+              <div class="card-icon"><i class="fa-solid fa-box" aria-hidden="true"></i></div>
+            <h4>Productos</h4>
+            <p>Indumentaria, plan de entrenamiento, equipamiento. Todo lo que usamos durante el proceso.</p>
+          </div>
+
+          <div class="card">
+              <div class="card-icon"><i class="fa-solid fa-wrench" aria-hidden="true"></i></div>
+            <h4>Servicios</h4>
+            <p>Lo que sabés hacer: diseño, producción audiovisual, nutrición.</p>
+          </div>
+
+          <div class="card">
+              <div class="card-icon"><i class="fa-solid fa-share-nodes" aria-hidden="true"></i></div>
+            <h4>Difusión</h4>
+            <p>Compartir el proyecto, conectarnos con otras personas, amplificar el mensaje.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <div class="partners-container">
+    <span class="muted-label">Hemos colaborado con:</span>
+
+    <div class="carousel" aria-label="Logos de marcas">
+      <div class="carousel-track">
+        <div class="carousel-item"><img src="public/logos/habitat.png" alt="25 HBT Marca"></div>
+        <div class="carousel-item"><img src="public/logos/guchini.png" alt="Guchi"></div>
+        <div class="carousel-item"><img src="public/logos/raku.png" alt="Raku"></div>
+        <div class="carousel-item"><img src="public/logos/myco.png" alt="Myco"></div>
+        <div class="carousel-item"><img src="public/logos/555.png" alt="Marca"></div>
+        <div class="carousel-item"><img src="public/logos/embarca.png" alt="Marca"></div>
+        <div class="carousel-item"><img src="public/logos/organyca.png" alt="Marca"></div>
+
+        <!-- Duplicate set for seamless loop -->
+
+      </div>
+    </div>
+
+    <p class="partners-cta">¿te gustaría acompañarnos en este desafío? <a href="#contact">Hablemos</a></p>
+  </div>
+
+
+  </section>
+
+  <section id="contact" class="dark-section">
+    <div class="dark-container">
+      <div class="contact-left">
+        <span class="muted-label">CONTACTO</span>
+        <h2 class="contact-title">Si te interesa ser parte, escribinos</h2>
+      </div>
+
+      <div class="contact-right">
+        <div class="contact-actions" aria-label="Contact links">
+          <a href="https://instagram.com/limitlab.project" class="icon-btn" target="_blank" rel="noopener" aria-label="Instagram">
+            <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+            <span class="sr-only">Instagram</span>
+          </a>
+
+
+          <a href="https://api.whatsapp.com/send?phone=5492613041556&text=Hola!%20Quiero%20sumarme%20a%20Limit%20Lab%20💪🏻" class="icon-btn" target="_blank" rel="noopener" aria-label="WhatsApp">
+            <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+            <span class="sr-only">WhatsApp</span>
+          </a>
+
+          <a href="mailto:info.limitlab@gmail.com" class="icon-btn" aria-label="Email">
+            <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+            <span class="sr-only">Email</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+  <script>
+    (function(){
+      const toggle = document.querySelector('.nav-toggle');
+      const nav = document.querySelector('.site-nav');
+      if(!toggle || !nav) return;
+      toggle.addEventListener('click', function(){
+        const open = nav.classList.toggle('open');
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        toggle.classList.toggle('hidden', open);
+      });
+
+      // Close when clicking a nav link
+      nav.addEventListener('click', function(e){
+        if(e.target.tagName === 'A') {
+          nav.classList.remove('open');
+          toggle.setAttribute('aria-expanded', 'false');
+          toggle.classList.remove('hidden');
+        }
+      });
+
+      // Close when clicking outside
+      document.addEventListener('click', function(e){
+        if(!nav.classList.contains('open')) return;
+        const insideNav = nav.contains(e.target) || toggle.contains(e.target);
+        if(!insideNav) {
+          nav.classList.remove('open');
+          toggle.setAttribute('aria-expanded', 'false');
+          toggle.classList.remove('hidden');
+        }
+      });
+    })();
+  </script>
+</html>

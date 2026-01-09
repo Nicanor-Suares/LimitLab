@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Merch — Limit Lab</title>
+
+  <!-- Geist Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">Limit Lab</a>
+
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="index.html#hero">Inicio</a>
+        <a href="index.html#roadmap">Hoja de ruta</a>
+        <a href="index.html#events">Eventos</a>
+        <a href="index.html#partners">Marcas</a>
+        <a href="index.html#join">Cómo sumarte</a>
+        <a href="index.html#contact">Contacto</a>
+        <a href="merch.html">Merch</a>
+      </nav>
+
+      <button class="nav-toggle" aria-label="Abrir menú"><i class="fa-solid fa-bars"></i></button>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="dark-section">
+      <div class="dark-container">
+        <div class="product-grid">
+
+          <!-- Galería / Imagen principal -->
+          <div class="product-media">
+            <div class="product-media__frame">
+              <img id="mainImage" src="public/remes/reme_frente.jpg" alt="Remera Limit Lab" class="product-media__img" />
+            </div>
+
+            <div class="thumbs">
+              <img class="thumb" src="public/remes/reme_frente.jpg" alt="thumb 1" data-src="public/remes/reme_frente.jpg" />
+              <img class="thumb" src="public/remes/reme_back.jpg" alt="thumb 2" data-src="public/remes/reme_back.jpg" />
+            </div>
+          </div>
+
+          <!-- Información y copy de venta -->
+          <aside>
+            <span class="muted-label">MERCH</span>
+            <h1 style="margin-top:6px; font-size:2.4rem;">Remera Limit Lab</h1>
+            <p style="color:#c8c6c5; margin-top:12px; line-height:1.7; max-width:420px;">Acompañanos en el camino al Ironman 70.3 vistiendo la remera que representa más que una prenda: un sueño. Cada compra nos ayuda a financiar inscripciones, viajes y los espacios compartidos con la comunidad.</p>
+
+            <div style="margin:18px 0;">
+              <strong style="font-size:1.3rem; display:block;">$30.000 ARS</strong>
+              <small style="color:#b8b6b5; display:block; margin-top:6px;">Envíos a todo el país.</small>
+            </div>
+
+            <div style="display:flex; gap:12px; margin-top:18px;">
+              <a href="https://api.whatsapp.com/send?phone=5492613041556&text=Hola!%20Quiero%20una%20remera!%20💪🏻" class="btn btn-tertiary">Quiero comprar</a>
+            </div>
+
+            <hr style="border:0; height:1px; background:rgba(255,255,255,0.04); margin:22px 0;" />
+
+            <h3 style="margin:0 0 8px 0;">Por qué comprar</h3>
+            <ul style="color:#bdb9b7; line-height:1.7; margin-top:8px;">
+              <li>Material de primera calidad.</li>
+              <li>Diseño minimalista y resistente al uso.</li>
+              <li>Apoyás concretamente el proyecto Ironman 70.3.</li>
+            </ul>
+
+            <p style="color:#bdb9b7; margin-top:16px;">No es solo una remera: es parte de nuestro experimento. Salimos a expandir nuestra zona de comfort y queremos que nos acompañes.</p>
+          </aside>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <script>
+
+    (function(){
+      const toggle = document.querySelector('.nav-toggle');
+      const nav = document.querySelector('.site-nav');
+      if(!toggle || !nav) return;
+      toggle.addEventListener('click', function(){
+        const open = nav.classList.toggle('open');
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        toggle.classList.toggle('hidden', open);
+      });
+
+      nav.addEventListener('click', function(e){
+        if(e.target.tagName === 'A') {
+          nav.classList.remove('open');
+          toggle.setAttribute('aria-expanded', 'false');
+          toggle.classList.remove('hidden');
+        }
+      });
+
+      document.addEventListener('click', function(e){
+        if(!nav.classList.contains('open')) return;
+        const insideNav = nav.contains(e.target) || toggle.contains(e.target);
+        if(!insideNav) {
+          nav.classList.remove('open');
+          toggle.setAttribute('aria-expanded', 'false');
+          toggle.classList.remove('hidden');
+        }
+      });
+    })();
+
+    // Galería simple: cambiar imagen principal al click en miniaturas
+    document.addEventListener('DOMContentLoaded', function(){
+      const thumbs = document.querySelectorAll('.thumb');
+      const main = document.getElementById('mainImage');
+      thumbs.forEach(t => t.addEventListener('click', () => {
+        const src = t.getAttribute('data-src');
+        if(src) main.src = src;
+      }));
+    });
+  </script>
+
+</body>
+</html>
