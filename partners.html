@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Limit Lab — Propuesta para Sponsors</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600&family=Geist+Mono&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --black: #0a0a0a;
+      --gray-700: #4a4a4a;
+      --gray-500: #7a7a7a;
+      --gray-300: #e5e5e5;
+      --bg-soft: #f8f9fb;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: 'Geist', system-ui, sans-serif;
+      color: var(--black);
+      background: #fff;
+      line-height: 1.6;
+    }
+
+    section {
+      padding: 96px 8vw;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .muted {
+      font-family: 'Geist Mono', monospace;
+      font-size: 12px;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--gray-500);
+      margin-bottom: 16px;
+      display: inline-block;
+    }
+
+    h1 {
+      font-size: clamp(3rem, 6vw, 5rem);
+      font-weight: 400;
+      line-height: 1.05;
+      margin: 0 0 24px;
+    }
+
+    h2 {
+      font-size: clamp(2rem, 4vw, 3rem);
+      font-weight: 400;
+      margin: 0 0 16px;
+    }
+
+    h3 {
+      font-size: 1.2rem;
+      font-weight: 500;
+      margin-bottom: 8px;
+    }
+
+    p {
+      color: var(--gray-700);
+      max-width: 720px;
+    }
+
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+    }
+
+    .hero-actions {
+      margin-top: 40px;
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      padding: 14px 26px;
+      border-radius: 999px;
+      text-decoration: none;
+      font-size: .95rem;
+      border: 1px solid var(--gray-300);
+      color: var(--black);
+    }
+
+    .btn.primary {
+      background: var(--black);
+      color: #fff;
+      border-color: var(--black);
+    }
+
+    /* DARK */
+    .dark {
+      background: var(--black);
+      color: #e8e6e4;
+    }
+
+    .dark p { color: #cfcfcf; }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 48px;
+    }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+      margin-top: 48px;
+    }
+
+    .stat-value {
+      font-size: 2rem;
+      font-weight: 300;
+      color: #fff;
+    }
+
+    .stat-label {
+      font-size: .75rem;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: #9b9896;
+    }
+
+    /* CARDS */
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin-top: 48px;
+    }
+
+    .card {
+      background: var(--bg-soft);
+      border: 1px solid #eceff3;
+      border-radius: 14px;
+      padding: 24px;
+    }
+
+    /* PACKS */
+    .packs {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin-top: 48px;
+    }
+
+    .pack {
+      border: 1px solid var(--gray-300);
+      border-radius: 18px;
+      padding: 28px;
+    }
+
+    .pack strong {
+      font-size: 1.1rem;
+    }
+
+    /* CONTACT */
+    .contact {
+      text-align: center;
+    }
+
+    @media (max-width: 900px) {
+      .grid,
+      .cards,
+      .packs,
+      .stats {
+        grid-template-columns: 1fr;
+      }
+
+      section {
+        padding: 64px 6vw;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container">
+    <span class="muted">PROPUESTA DE ALIANZA</span>
+    <h1>
+      El desafío no es el Ironman.<br>
+      Es todo lo que pasa antes.
+    </h1>
+    <p>
+      Limit Lab es un laboratorio para ir más allá de lo que creemos posible.
+      Documentamos procesos reales, construimos comunidad
+      y colaboramos con marcas que creen en el deporte,
+      la salud y el compromiso a largo plazo.
+    </p>
+
+    <div class="hero-actions">
+      <a href="#proyecto" class="btn primary">Conocer el proyecto</a>
+      <a href="#alianza" class="btn">Sumar mi marca</a>
+    </div>
+  </div>
+</section>
+
+<!-- PROYECTO -->
+<section id="proyecto" class="dark">
+  <div class="container">
+    <div class="grid">
+      <div>
+        <span class="muted">EL DESAFÍO 2025</span>
+        <h2>Ironman 70.3</h2>
+        <p>1.9 km natación · 90 km ciclismo · 21 km running</p>
+      </div>
+
+      <div>
+        <p>
+          El Ironman es el punto de encuentro.
+          El verdadero valor está en el proceso:
+          meses de entrenamiento, eventos abiertos,
+          generación de contenido y presencia constante
+          en redes y en la calle.
+        </p>
+        <p>
+          Limit Lab conecta marcas con personas reales,
+          en contextos reales, alrededor de un objetivo exigente
+          y altamente inspirador.
+        </p>
+      </div>
+    </div>
+
+    <div class="stats">
+      <div>
+        <div class="stat-value">+1.200</div>
+        <div class="stat-label">Atletas en carrera</div>
+      </div>
+      <div>
+        <div class="stat-value">100K+</div>
+        <div class="stat-label">Alcance mensual en redes</div>
+      </div>
+      <div>
+        <div class="stat-value">117</div>
+        <div class="stat-label">Miembros en WhatsApp</div>
+      </div>
+      <div>
+        <div class="stat-value">20–40</div>
+        <div class="stat-label">Personas por evento</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COMUNIDAD -->
+<section>
+  <div class="container">
+    <span class="muted">COMUNIDAD & CONTENIDO</span>
+    <h2>Una audiencia real y alineada</h2>
+
+    <div class="cards">
+      <div class="card">
+        <h3>Redes sociales</h3>
+        <p>
+          Instagram con casi 2.000 seguidores y un alcance
+          mensual promedio de +100.000 visualizaciones.
+          Contenido orgánico, sin pauta, altamente fidelizado.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Eventos presenciales</h3>
+        <p>
+          Entrenamientos, salidas y encuentros donde
+          las marcas interactúan cara a cara con la comunidad.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Storytelling</h3>
+        <p>
+          Documentamos el proceso completo: entrenamientos,
+          preparación mental, errores, aprendizajes y carrera.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ALIANZA -->
+<section id="alianza" class="dark">
+  <div class="container">
+    <span class="muted">ALIANZA CON MARCAS</span>
+    <h2>No vendemos publicidad.<br>Construimos historias.</h2>
+
+    <p>
+      Buscamos marcas que quieran acompañar el proceso
+      y ser parte visible del camino hacia el Ironman 70.3.
+      La exposición es sostenida, auténtica y emocional.
+    </p>
+
+    <div class="packs">
+      <div class="pack">
+        <strong>Partner Principal</strong>
+        <p>
+          Presencia destacada en tritraje, eventos,
+          redes sociales y contenido audiovisual.
+        </p>
+      </div>
+
+      <div class="pack">
+        <strong>Marca Aliada</strong>
+        <p>
+          Visibilidad en tritraje, menciones,
+          activaciones puntuales y contenido compartido.
+        </p>
+      </div>
+
+      <div class="pack">
+        <strong>Colaborador</strong>
+        <p>
+          Aporte en productos o servicios utilizados
+          durante todo el proceso.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACTO -->
+<section class="contact">
+  <div class="container">
+    <span class="muted">CONTACTO</span>
+    <h2>¿Tu marca quiere ser parte del camino?</h2>
+    <p>
+      Armamos propuestas a medida según cada proyecto.
+      Escribinos y lo charlamos.
+    </p>
+
+    <div class="hero-actions" style="justify-content:center;">
+      <a href="mailto:info.limitlab@gmail.com" class="btn primary">Email</a>
+      <a href="https://api.whatsapp.com/send?phone=5492613041556&text=Hola!%20Trabajemos%20juntos!%20💪🏻" class="btn primary">WhatsApp</a>
+      <a href="https://instagram.com/limitlab.project" class="btn primary">Instagram</a>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>
