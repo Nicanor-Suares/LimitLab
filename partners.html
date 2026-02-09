@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Limit Lab — Propuesta para Sponsors</title>
+  <title>Limit Lab · Propuesta de Sponsoreo</title>
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,10 +13,11 @@
   <style>
     :root {
       --black: #0a0a0a;
-      --gray-700: #4a4a4a;
-      --gray-500: #7a7a7a;
-      --gray-300: #e5e5e5;
-      --bg-soft: #f8f9fb;
+      --gray-800: #2a2a2a;
+      --gray-600: #6b6b6b;
+      --gray-400: #9a9a9a;
+      --gray-200: #e6e6e6;
+      --soft-bg: #f8f9fb;
     }
 
     * { box-sizing: border-box; }
@@ -26,7 +27,7 @@
       font-family: 'Geist', system-ui, sans-serif;
       color: var(--black);
       background: #fff;
-      line-height: 1.6;
+      line-height: 1.65;
     }
 
     section {
@@ -38,14 +39,14 @@
       margin: 0 auto;
     }
 
-    .muted {
+    .label {
       font-family: 'Geist Mono', monospace;
       font-size: 12px;
-      letter-spacing: .12em;
+      letter-spacing: .14em;
       text-transform: uppercase;
-      color: var(--gray-500);
-      margin-bottom: 16px;
+      color: var(--gray-400);
       display: inline-block;
+      margin-bottom: 16px;
     }
 
     h1 {
@@ -56,7 +57,7 @@
     }
 
     h2 {
-      font-size: clamp(2rem, 4vw, 3rem);
+      font-size: clamp(2.2rem, 4.5vw, 3.2rem);
       font-weight: 400;
       margin: 0 0 16px;
     }
@@ -64,12 +65,22 @@
     h3 {
       font-size: 1.2rem;
       font-weight: 500;
-      margin-bottom: 8px;
+      margin-bottom: 10px;
     }
 
     p {
-      color: var(--gray-700);
-      max-width: 720px;
+      color: var(--gray-800);
+      max-width: 760px;
+      margin-bottom: 16px;
+    }
+
+    ul {
+      padding-left: 18px;
+      color: var(--gray-800);
+    }
+
+    li {
+      margin-bottom: 8px;
     }
 
     .hero {
@@ -78,7 +89,7 @@
       align-items: center;
     }
 
-    .hero-actions {
+    .actions {
       margin-top: 40px;
       display: flex;
       gap: 16px;
@@ -86,11 +97,11 @@
     }
 
     .btn {
-      padding: 14px 26px;
+      padding: 14px 28px;
       border-radius: 999px;
       text-decoration: none;
       font-size: .95rem;
-      border: 1px solid var(--gray-300);
+      border: 1px solid var(--gray-200);
       color: var(--black);
     }
 
@@ -103,15 +114,18 @@
     /* DARK */
     .dark {
       background: var(--black);
-      color: #e8e6e4;
+      color: #e9e7e5;
     }
 
-    .dark p { color: #cfcfcf; }
+    .dark p,
+    .dark li {
+      color: #d2d0ce;
+    }
 
     .grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 48px;
+      gap: 56px;
     }
 
     .stats {
@@ -129,7 +143,7 @@
 
     .stat-label {
       font-size: .75rem;
-      letter-spacing: .12em;
+      letter-spacing: .14em;
       text-transform: uppercase;
       color: #9b9896;
     }
@@ -138,33 +152,35 @@
     .cards {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 24px;
+      gap: 28px;
       margin-top: 48px;
     }
 
     .card {
-      background: var(--bg-soft);
+      background: var(--soft-bg);
       border: 1px solid #eceff3;
-      border-radius: 14px;
-      padding: 24px;
+      border-radius: 16px;
+      padding: 28px;
     }
 
     /* PACKS */
     .packs {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 24px;
-      margin-top: 48px;
+      gap: 28px;
+      margin-top: 56px;
     }
 
     .pack {
-      border: 1px solid var(--gray-300);
-      border-radius: 18px;
-      padding: 28px;
+      border: 1px solid var(--gray-200);
+      border-radius: 20px;
+      padding: 32px;
     }
 
     .pack strong {
-      font-size: 1.1rem;
+      font-size: 1.15rem;
+      display: block;
+      margin-bottom: 12px;
     }
 
     /* CONTACT */
@@ -192,50 +208,56 @@
 <!-- HERO -->
 <section class="hero">
   <div class="container">
-    <span class="muted">PROPUESTA DE ALIANZA</span>
+    <span class="label">Propuesta de Sponsoreo</span>
     <h1>
-      El desafío no es el Ironman.<br>
-      Es todo lo que pasa antes.
+      No es solo una carrera.<br>
+      Es un proceso que se vive y se comparte.
     </h1>
     <p>
-      Limit Lab es un laboratorio para ir más allá de lo que creemos posible.
-      Documentamos procesos reales, construimos comunidad
-      y colaboramos con marcas que creen en el deporte,
-      la salud y el compromiso a largo plazo.
+      Este proyecto nace en la intersección entre deporte de alto rendimiento,
+      comunidad y construcción de marca. Buscamos alianzas genuinas con marcas
+      que quieran formar parte de una historia real, medible y con impacto.
     </p>
 
-    <div class="hero-actions">
-      <a href="#proyecto" class="btn primary">Conocer el proyecto</a>
-      <a href="#alianza" class="btn">Sumar mi marca</a>
+    <div class="actions">
+      <a href="#contexto" class="btn primary">Conocer el proyecto</a>
+      <a href="#alianzas" class="btn">Explorar alianzas</a>
     </div>
   </div>
 </section>
 
-<!-- PROYECTO -->
-<section id="proyecto" class="dark">
+<!-- CONTEXTO -->
+<section id="contexto">
   <div class="container">
-    <div class="grid">
-      <div>
-        <span class="muted">EL DESAFÍO 2025</span>
-        <h2>Ironman 70.3</h2>
-        <p>1.9 km natación · 90 km ciclismo · 21 km running</p>
-      </div>
+    <span class="label">Contexto del proyecto</span>
+    <h2>Deporte, comunidad y marca</h2>
 
-      <div>
-        <p>
-          El Ironman es el punto de encuentro.
-          El verdadero valor está en el proceso:
-          meses de entrenamiento, eventos abiertos,
-          generación de contenido y presencia constante
-          en redes y en la calle.
-        </p>
-        <p>
-          Limit Lab conecta marcas con personas reales,
-          en contextos reales, alrededor de un objetivo exigente
-          y altamente inspirador.
-        </p>
-      </div>
-    </div>
+    <p>
+      El objetivo del proyecto es acompañar el proceso completo de preparación
+      para un Ironman 70.3, documentando el camino desde adentro y compartiéndolo
+      con una comunidad activa, real y comprometida.
+    </p>
+
+    <p>
+      La propuesta no se basa únicamente en visibilidad, sino en la participación
+      activa de las marcas dentro de un relato auténtico de disciplina,
+      constancia, superación personal, innovación y bienestar.
+    </p>
+  </div>
+</section>
+
+<!-- OBJETIVO MARCAS -->
+<section class="dark">
+  <div class="container">
+    <span class="label">Objetivo para las marcas</span>
+    <h2>¿Por qué sumarse?</h2>
+
+    <ul>
+      <li>Posicionamiento en un entorno deportivo auténtico y no forzado.</li>
+      <li>Asociación a un relato de proceso, no solo al resultado final.</li>
+      <li>Generación de contenido orgánico, reutilizable y medible.</li>
+      <li>Contacto directo con una comunidad alineada a hábitos saludables.</li>
+    </ul>
 
     <div class="stats">
       <div>
@@ -244,11 +266,11 @@
       </div>
       <div>
         <div class="stat-value">100K+</div>
-        <div class="stat-label">Alcance mensual en redes</div>
+        <div class="stat-label">Alcance mensual</div>
       </div>
       <div>
         <div class="stat-value">117</div>
-        <div class="stat-label">Miembros en WhatsApp</div>
+        <div class="stat-label">Miembros activos</div>
       </div>
       <div>
         <div class="stat-value">20–40</div>
@@ -258,92 +280,97 @@
   </div>
 </section>
 
-<!-- COMUNIDAD -->
-<section>
+<!-- ALIANZAS -->
+<section id="alianzas">
   <div class="container">
-    <span class="muted">COMUNIDAD & CONTENIDO</span>
-    <h2>Una audiencia real y alineada</h2>
+    <span class="label">Estructura de alianzas</span>
+    <h2>Tipos de Sponsoreo</h2>
 
-    <div class="cards">
-      <div class="card">
-        <h3>Redes sociales</h3>
-        <p>
-          Instagram con casi 2.000 seguidores y un alcance
-          mensual promedio de +100.000 visualizaciones.
-          Contenido orgánico, sin pauta, altamente fidelizado.
-        </p>
+    <div class="packs">
+      <div class="pack">
+        <strong>Partner Principal</strong>
+        <p><em>Rol:</em> Marca protagonista del proyecto.</p>
+
+        <p><strong>Aportes esperados</strong></p>
+        <ul>
+          <li>Aporte económico principal o cash + producto/servicio estratégico.</li>
+        </ul>
+
+        <p><strong>Beneficios</strong></p>
+        <ul>
+          <li>Presencia prioritaria en tritraje oficial.</li>
+          <li>Exclusividad por categoría.</li>
+          <li>Mención como Partner Principal en todos los contenidos y eventos.</li>
+          <li>Integración en storytelling, entrenamientos y competencias.</li>
+          <li>Uso del contenido generado para comunicación propia.</li>
+        </ul>
       </div>
 
-      <div class="card">
-        <h3>Eventos presenciales</h3>
-        <p>
-          Entrenamientos, salidas y encuentros donde
-          las marcas interactúan cara a cara con la comunidad.
-        </p>
+      <div class="pack">
+        <strong>Marca Aliada</strong>
+        <p><em>Rol:</em> Marca que acompaña y potencia el proceso.</p>
+
+        <p><strong>Aportes esperados</strong></p>
+        <ul>
+          <li>Aporte económico parcial y/o producto o servicio relevante.</li>
+        </ul>
+
+        <p><strong>Beneficios</strong></p>
+        <ul>
+          <li>Presencia secundaria en tritraje.</li>
+          <li>Menciones orgánicas en contenidos específicos.</li>
+          <li>Activaciones puntuales y campañas colaborativas.</li>
+          <li>Co-creación de contenido.</li>
+        </ul>
       </div>
 
-      <div class="card">
-        <h3>Storytelling</h3>
-        <p>
-          Documentamos el proceso completo: entrenamientos,
-          preparación mental, errores, aprendizajes y carrera.
-        </p>
+      <div class="pack">
+        <strong>Colaborador</strong>
+        <p><em>Rol:</em> Soporte estratégico del día a día.</p>
+
+        <p><strong>Aportes esperados</strong></p>
+        <ul>
+          <li>Productos o servicios utilizados durante todo el proceso.</li>
+        </ul>
+
+        <p><strong>Beneficios</strong></p>
+        <ul>
+          <li>Menciones como colaborador oficial.</li>
+          <li>Presencia en contenidos de uso real.</li>
+          <li>Asociación al behind the scenes del proyecto.</li>
+        </ul>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ALIANZA -->
-<section id="alianza" class="dark">
+<!-- DIFERENCIAL -->
+<section class="dark">
   <div class="container">
-    <span class="muted">ALIANZA CON MARCAS</span>
-    <h2>No vendemos publicidad.<br>Construimos historias.</h2>
+    <span class="label">Diferencial</span>
+    <h2>Una alianza de proceso</h2>
 
-    <p>
-      Buscamos marcas que quieran acompañar el proceso
-      y ser parte visible del camino hacia el Ironman 70.3.
-      La exposición es sostenida, auténtica y emocional.
-    </p>
-
-    <div class="packs">
-      <div class="pack">
-        <strong>Partner Principal</strong>
-        <p>
-          Presencia destacada en tritraje, eventos,
-          redes sociales y contenido audiovisual.
-        </p>
-      </div>
-
-      <div class="pack">
-        <strong>Marca Aliada</strong>
-        <p>
-          Visibilidad en tritraje, menciones,
-          activaciones puntuales y contenido compartido.
-        </p>
-      </div>
-
-      <div class="pack">
-        <strong>Colaborador</strong>
-        <p>
-          Aporte en productos o servicios utilizados
-          durante todo el proceso.
-        </p>
-      </div>
-    </div>
+    <ul>
+      <li>No es sponsorship tradicional: es una alianza viva.</li>
+      <li>Historia real, documentada y compartida.</li>
+      <li>Contenido auténtico, no publicitario.</li>
+      <li>Métricas claras: alcance, engagement y entregables.</li>
+      <li>Beneficios tangibles + posicionamiento de marca.</li>
+    </ul>
   </div>
 </section>
 
 <!-- CONTACTO -->
 <section class="contact">
   <div class="container">
-    <span class="muted">CONTACTO</span>
-    <h2>¿Tu marca quiere ser parte del camino?</h2>
+    <span class="label">Contacto</span>
+    <h2>¿Tu marca quiere ser parte del proceso?</h2>
     <p>
-      Armamos propuestas a medida según cada proyecto.
-      Escribinos y lo charlamos.
+      Armamos propuestas a medida según cada marca.
+      Nos interesa construir relaciones a largo plazo.
     </p>
 
-    <div class="hero-actions" style="justify-content:center;">
+    <div class="actions" style="justify-content:center;">
       <a href="mailto:info.limitlab@gmail.com" class="btn primary">Email</a>
       <a href="https://api.whatsapp.com/send?phone=5492613041556&text=Hola!%20Trabajemos%20juntos!%20💪🏻" class="btn primary">WhatsApp</a>
       <a href="https://instagram.com/limitlab.project" class="btn primary">Instagram</a>
